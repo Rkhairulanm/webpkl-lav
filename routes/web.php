@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\blogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//blog route
+Route::get('/', [blogController::class, 'index']);
+Route::get('/contact', [blogController::class, 'contact']);
+Route::get('/cad', [blogController::class, 'cad']);
+Route::get('/fabric', [blogController::class, 'fabric']);
+Route::get('/pants', [blogController::class, 'pants']);
+Route::get('/tshirt', [blogController::class, 'tshirt']);
+Route::get('/shirt', [blogController::class, 'shirt']);
+Route::get('/outer', [blogController::class, 'outer']);
+//end blog
