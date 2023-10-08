@@ -7,23 +7,30 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1500);
+        }, 1);
     };
-
     spinner();
-
-    (function($) {
-
-        "use strict";
-
-
-    })(jQuery);
-
 
 
     // Initiate the wowjs
     new WOW().init();
 
+    (function($) {
+
+        "use strict";
+
+        $(".toggle-password").click(function() {
+
+      $(this).toggleClass("fa-eye fa-eye-slash");
+      var input = $($(this).attr("toggle"));
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
+      } else {
+        input.attr("type", "password");
+      }
+    });
+
+    })(jQuery);
 
     // Sticky Navbar
     $(window).scroll(function () {

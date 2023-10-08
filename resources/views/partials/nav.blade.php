@@ -19,7 +19,7 @@
                         <a href="/outer" class="dropdown-item">Outer Section</a>
                     </div>
                 </div>
-                <a href="/fabric" class="nav-item nav-link"><i class="fas fa-user"></i></a>
+                <a href="/login" class="nav-item nav-link"><i class="fas fa-user"></i></a>
             </div>
         </div>
     </nav>

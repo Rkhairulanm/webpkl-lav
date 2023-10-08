@@ -29,14 +29,10 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-
-
     <!-- Template Stylesheet -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-
     <link rel="icon" type="image/x-icon" href="../img/favicon.jpg">
     <title>{{ $title }} | CJM GARMENT</title>
 

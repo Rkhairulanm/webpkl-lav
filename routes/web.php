@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\blogController;
+use App\Http\Controllers\ProduksiController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +25,6 @@ Route::get('/tshirt', [blogController::class, 'tshirt']);
 Route::get('/shirt', [blogController::class, 'shirt']);
 Route::get('/outer', [blogController::class, 'outer']);
 //end blog
+Route::get('/login', [SessionController::class, 'index']);
+Route::post('/login/attempt', [SessionController::class, 'attempt']);
+Route::resource('produksi', ProduksiController::class);

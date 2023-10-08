@@ -596,12 +596,12 @@ h6,
 .col-lg-7 {
     min-height: 500px;
 }
+
 .carousel img {
     width: 400px; /* Lebar 400 piksel */
-    height: 500px; /* Tinggi 300 piksel */
+    height: 400px; /* Tinggi 300 piksel */
     object-fit: cover; /* Memastikan gambar mengisi area dengan rasio yang benar */
 }
-
 /* #carouselGolphi .carousel-inner .carousel-item img {
     width: 340px;
     height: 130px;

@@ -7,6 +7,3 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
