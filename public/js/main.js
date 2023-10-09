@@ -11,7 +11,6 @@
     };
     spinner();
 
-
     // Initiate the wowjs
     new WOW().init();
 
@@ -40,7 +39,6 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
-
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
@@ -74,8 +72,6 @@
         delay: 10,
         time: 2000
     });
-
-
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {

@@ -27,7 +27,8 @@ $(function() {
 	  $('.navbar .dropdown > a').click(function(){
 	    location.href = this.href;
 	  });
-	}; 
+	};
 	siteDropdown();
 
 });
+

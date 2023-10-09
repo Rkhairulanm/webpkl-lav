@@ -188,16 +188,9 @@ h6,
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         z-index: 999;
     }
-
-    .sticky-top.navbar-dark {
-        position: fixed;
-        background: #FFFFFF;
-    }
-
-
     .navbar-dark .navbar-nav .nav-link::before {
         position: absolute;
         content: "";
@@ -597,33 +590,9 @@ h6,
     min-height: 500px;
 }
 
+
 .carousel img {
     width: 400px; /* Lebar 400 piksel */
     height: 400px; /* Tinggi 300 piksel */
     object-fit: cover; /* Memastikan gambar mengisi area dengan rasio yang benar */
 }
-/* #carouselGolphi .carousel-inner .carousel-item img {
-    width: 340px;
-    height: 130px;
-    object-fit: cover;
-}
-#carouselInoutseam .carousel-inner .carousel-item img {
-    width: 340px;
-    height: 130px;
-    object-fit: cover;
-}
-#carouselWaistband .carousel-inner .carousel-item img {
-    width: 340px;
-    height: 130px;
-    object-fit: cover;
-}
-#carouselDart .carousel-inner .carousel-item img {
-    width: 340px;
-    height: 130px;
-    object-fit: cover;
-}
-#carouselBibir .carousel-inner .carousel-item img {
-    width: 340px;
-    height: 130px;
-    object-fit: cover;
-} */
