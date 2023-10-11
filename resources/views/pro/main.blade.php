@@ -21,7 +21,7 @@
     {{--  <link id="pagestyle" href="{{ asset('assets/css/style.css') }}" rel="stylesheet">  --}}
     <link id="pagestyle" href="{{ asset('assets/css/soft-ui-dashboard.css?v=1.0.7') }}" rel="stylesheet">
     <!-- Nepcha Analytics (nepcha.com) -->
-    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+    <script defer data-site="cjm.garment.co.id" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
 </head>
 
 <body>

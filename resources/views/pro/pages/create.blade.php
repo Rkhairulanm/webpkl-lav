@@ -23,7 +23,7 @@
                 </div>
                 <div class="mb-3">
                     <h6 for="output">Output</h6>
-                    <input type="text" class="form-control" id="output" name="output" value="{{ Session::get('output') }}" aria-describedby="emailHelp" required>
+                    <input type="text" class="form-control" id="output" name="output" value="{{ Session::get('output') }}" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <h6 for="foto">Foto</h6>

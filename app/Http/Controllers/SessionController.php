@@ -34,7 +34,7 @@ class SessionController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($login)) {
-            return redirect('/data');
+            return redirect('/dashboard');
         } else {
             return redirect('/login')->withErrors('Wrong Password or Email');
         }

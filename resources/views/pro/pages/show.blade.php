@@ -19,6 +19,10 @@
                                             <td>{{ $data->brand }}</td>
                                         </tr>
                                         <tr>
+                                            <th>Article</th>
+                                            <td>{{ $data->artikel }}</td>
+                                        </tr>
+                                        <tr>
                                             <th>Total</th>
                                             <td>{{ $data->total }}</td>
                                         </tr>

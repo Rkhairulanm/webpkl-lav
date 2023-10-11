@@ -31,6 +31,12 @@ Route::get('/logout', [SessionController::class, 'logout'])->middleware('isLogin
 Route::get('/register', [SessionController::class, 'register'])->middleware('isLogin');
 Route::post('/register/create', [SessionController::class, 'create'])->middleware('isLogin');
 Route::get('/dashboard', [ProduksiView::class, 'index'])->middleware('isLogin');
-Route::get('/profile', [ProduksiView::class, 'profile'])->middleware('isLogin');
+Route::get('/profile', [ProduksiView::class, 'show']);
 Route::post('/login/attempt', [SessionController::class, 'attempt'])->middleware('isGuest');
 Route::resource('data', ProduksiController::class)->middleware('isLogin');
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles', RoleController::class);
+    Route::resource('users', UserController::class);
+    Route::resource('products', ProductController::class);
+});

@@ -9,10 +9,10 @@
 
                 <h2 class="ms-3 py-3 text-dark">Pendataan Produksi</h2>
                 <div class="container-lg">
-                    <a href="/data/create" class="btn btn-primary">Tambah</a>
+                    <a href="/data/create" class="btn btn-success">Tambah</a>
                     <table border="1" id="tabel" class="table border" style="width: 100%">
                         <thead>
-                            <tr>
+                            <tr>    
                                 <th>Sales Order</th>
                                 <th>Brand</th>
                                 <th>Article</th>
@@ -25,7 +25,6 @@
                         <tbody>
                             <tr>
                                 @foreach ($data as $i)
-                            <tr>
                                 <td>
                                     {{ $i->so }}
                                 </td>
@@ -57,7 +56,6 @@
                                 </td>
                             </tr>
                             @endforeach
-                            </tr>
                         </tbody>
                     </table>
                     {{ $data->links() }}

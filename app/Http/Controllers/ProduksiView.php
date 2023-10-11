@@ -2,21 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\produksi;
 use App\Models\user;
+use App\Models\produksi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProduksiView extends Controller
 {
-    function index(){
-        $data = produksi::orderBy('so', 'asc')->paginate(10);
+     function index(){
+        $data = produksi::orderBy('so', 'asc')->paginate();
         return view('pro.pages.dashboard', [
-            'title' => 'Data'
+            'title' => 'Dashboard'
         ])->with('data', $data);
     }
-    public function show($user)
+    public function show()
     {
-        $users = User::select('nik', 'name', 'email', 'foto')->get();
-        return view('pro.pages.user', compact('users'));
+        $user = Auth::user();
+        return view('pro.pages.user', compact('user'), [
+            'title' => 'Profile'
+        ]);
     }
 }
